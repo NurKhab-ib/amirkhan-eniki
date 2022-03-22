@@ -188,6 +188,11 @@ const langArr = {
         "tat": "Әсәрләр",
         "en": "Writings",
     },
+    "textssublink" : {
+        "ru" : "Читать &rarr;",
+        "tat" : "Укырга &rarr;",
+        "en" : "To read &rarr;",
+    },
     "journlink" : {
         "ru": "Публицистика",
         "tat": "Публицистика",
@@ -351,6 +356,9 @@ function changeLanguage() {
 }
 
 changeLanguage();
+
+
+//! gallery opening
 
 //! lazy loading
 

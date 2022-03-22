@@ -107,7 +107,7 @@ ol, ul, li {
         grid-column: 1 / 2;
         
         h1 {
-            margin: 0;
+            margin: 0;  
         }
 
         h2 {
@@ -136,26 +136,17 @@ ol, ul, li {
 }
 
 .menu {
-    &__body {}
+    &__body {
+        user-select: none;
+    }
 
     &__list {
         margin: 15px 25px;
-        &>li:hover {
-            .menu__submenu-list {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
     }
-
     &__link {
         font-weight: 100;
         font-size: 30px;
         transition: .3s;
-
-        &:hover {
-            font-size: 32px;
-        }
     }
     &_burger {
         display: none;
@@ -256,7 +247,6 @@ ol, ul, li {
         margin-top: -20px;
         width: 667px;
     }
-
     &__text-l, &__text-r,
     &__text-l-g, &__text-r-g {
         margin: 30px 30px 30px 70px;
@@ -298,7 +288,6 @@ ol, ul, li {
     &__text-r-g {            
         background-color: rgba(255,255,255,.3);
     }
-
     &__parag-l-container, &__parag-r-container {
         width: 100%;
         display: grid;
@@ -600,6 +589,9 @@ ol, ul, li {
 
 //! tabs
 .tabs {
+    background-color: rgba(0, 0, 0, .1);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     user-select: none;
     margin: 50px 100px 50px 50px;
 
@@ -614,7 +606,7 @@ ol, ul, li {
             justify-content: center;
             align-items: center;
             text-transform: uppercase;
-            color:rgba(0, 0, 0, .7);
+            color:rgba(0, 0, 0, .9);
             text-decoration: none;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
@@ -629,13 +621,19 @@ ol, ul, li {
                 background-color: rgba(0, 0, 0, .1);
             }
 		}
+        &__item-5 {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 30px;
+        }
 
 		&__block {
             position: relative; 
             padding: 20px;
             font-size: 18px;
             line-height: 24px;
+            border-bottom-right-radius: 30px;
             display: none;
+            
             &:nth-child(1) {
                 background-color: rgba(0, 0, 0, .1);
                 &:before {
