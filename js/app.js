@@ -188,11 +188,6 @@ const langArr = {
         "tat": "Әсәрләр",
         "en": "Writings",
     },
-    "textssublink" : {
-        "ru" : "Читать &rarr;",
-        "tat" : "Укырга &rarr;",
-        "en" : "To read &rarr;",
-    },
     "journlink" : {
         "ru": "Публицистика",
         "tat": "Публицистика",
@@ -244,9 +239,9 @@ const langArr = {
         "en": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Achievements</strong><br>&nbsp;&nbsp;&nbsp;",
     },
     "biolink-1" : {
-        "ru": "Читать биографию писателя &rarr;",
-        "tat": "Язучының биографиясен укырга &rarr;",
-        "en": "To read the writer's biography &rarr;",
+        "ru": "Читать биографию писателя",
+        "tat": "Язучының биографиясен укырга",
+        "en": "To read the writer's biography",
     },
     "textstitle" : {
         "ru": "<i class='fas fa-book'></i>&nbsp;Художественные произведения",
@@ -264,9 +259,9 @@ const langArr = {
         "en": "",
     },
     "textslink-1" : {
-        "ru": "Читать произведения А. Еники &rarr;",
-        "tat": "Ә. Еники әсәрләрен укырга &rarr;",
-        "en": "To read A. Eniki's works &rarr;",
+        "ru": "Читать произведения А. Еники",
+        "tat": "Ә. Еники әсәрләрен укырга",
+        "en": "To read A. Eniki's works",
     },
     "textsfile" : {
         "ru": "Или почитать его рассказы вы сможете, скачав данный файл:",

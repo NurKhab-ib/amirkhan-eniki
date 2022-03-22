@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
@@ -119,6 +120,10 @@ ol, ul, li {
   margin: 0;
 }
 
+.header__title h1:first-line {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .header__title h2 {
   color: firebrick;
   font-size: 50px;
@@ -140,9 +145,10 @@ ol, ul, li {
 }
 
 .header__logo img {
-  border: 3px solid black;
-  -webkit-box-shadow: 12px 12px 0 #242323;
-          box-shadow: 12px 12px 0 #242323;
+  border-radius: 10px;
+  border: 3px solid #000;
+  -webkit-box-shadow: 12px 15px 0 #242323;
+          box-shadow: 12px 15px 0 #242323;
 }
 
 .menu__body {
@@ -159,8 +165,15 @@ ol, ul, li {
 .menu__link {
   font-weight: 100;
   font-size: 30px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+}
+
+.menu__link:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.3);
 }
 
 .menu_burger {
@@ -179,7 +192,8 @@ ol, ul, li {
   border-bottom-right-radius: 40px;
   border-top-left-radius: 40px;
   border: none;
-  background-color: #8f0032;
+  background-color: #9b0036;
+  border: 3px solid #660000;
   color: white;
   outline: none;
   cursor: pointer;
@@ -188,7 +202,8 @@ ol, ul, li {
 }
 
 .menu__change-lang:hover {
-  background-color: rgba(143, 0, 50, 0.8);
+  -webkit-box-shadow: 5px 5px 0 #660000;
+          box-shadow: 5px 5px 0 #660000;
 }
 
 .buttons {
@@ -290,11 +305,7 @@ ol, ul, li {
   line-height: 1.5;
 }
 
-.block__text-l-link,
-.block__text-l a, .block__text-r-link,
-.block__text-r a, .block__text-l-g-link,
-.block__text-l-g a, .block__text-r-g-link,
-.block__text-r-g a {
+.block__text-l-link, .block__text-l a, .block__text-r-link, .block__text-r a, .block__text-l-g-link, .block__text-l-g a, .block__text-r-g-link, .block__text-r-g a {
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
@@ -306,8 +317,24 @@ ol, ul, li {
   color: rgba(29, 73, 155, 0.8);
 }
 
+.block__text-l-link::after, .block__text-r-link::after, .block__text-l-g-link::after, .block__text-r-g-link::after {
+  -webkit-transition: all .35s ease 0s;
+  transition: all .35s ease 0s;
+  content: ' →';
+  opacity: 0;
+  margin-left: -10px;
+}
+
 .block__text-l-link:hover, .block__text-r-link:hover, .block__text-l-g-link:hover, .block__text-r-g-link:hover {
   color: #06358d;
+}
+
+.block__text-l-link:hover::after, .block__text-r-link:hover::after, .block__text-l-g-link:hover::after, .block__text-r-g-link:hover::after {
+  -webkit-transition: all .35s ease 0s;
+  transition: all .35s ease 0s;
+  content: ' →';
+  opacity: 1;
+  margin-left: 0px;
 }
 
 .block__text-l, .block__text-l-g {
@@ -331,23 +358,6 @@ ol, ul, li {
 
 .block__text-r-g {
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-.block__link {
-  text-align: center;
-}
-
-.block__link.hide {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.block__link a {
-  color: #06358d;
-}
-
-.block__link a:hover {
-  color: #042563;
 }
 
 .block__parag-l-container, .block__parag-r-container {
@@ -720,7 +730,7 @@ ol, ul, li {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin: 50px 100px 50px 50px;
+  margin: 50px;
 }
 
 .tabs__items {
@@ -830,8 +840,6 @@ ol, ul, li {
   width: 20%;
   position: absolute;
   top: -50px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
 }
 
 .footer {
@@ -889,16 +897,16 @@ ol, ul, li {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template: auto / 1fr 1fr 1fr;
-  -webkit-column-gap: 100px;
-          column-gap: 100px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: auto / 1fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
   margin-top: 15px;
   width: 75%;
 }
 
 .fab {
-  font-size: 70px;
+  font-size: 80px;
 }
 
 .fa-telegram-plane {
@@ -1117,6 +1125,13 @@ ol, ul, li {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 5%;
         grid-template: 1fr / 1fr 1fr 1fr 1fr 5%;
     justify-items: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  *:hover {
+    color: none;
+    background-color: none;
   }
 }
 

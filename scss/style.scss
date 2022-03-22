@@ -105,9 +105,11 @@ ol, ul, li {
     &__title {
         font-size: 50px;
         grid-column: 1 / 2;
-        
         h1 {
             margin: 0;  
+            &:first-line {
+                color: rgba(0, 0, 0, .7);
+            }
         }
 
         h2 {
@@ -129,8 +131,9 @@ ol, ul, li {
         grid-column: 2 / 3;
 
         img {
-            border: 3px solid black;
-            box-shadow: 12px 12px 0 rgb(36, 35, 35);
+            border-radius: 10px;
+            border: 3px solid #000;
+            box-shadow: 12px 15px 0 rgb(36, 35, 35);
         }
     }
 }
@@ -146,7 +149,12 @@ ol, ul, li {
     &__link {
         font-weight: 100;
         font-size: 30px;
-        transition: .3s;
+        transition: all 0.3s ease 0s;
+        border-radius: 5px;
+        &:hover {
+            border: 2px solid rgba(0, 0, 0, .5);
+            box-shadow: 7px 7px 0 rgba(0, 0, 0, .3);
+        }
     }
     &_burger {
         display: none;
@@ -161,14 +169,15 @@ ol, ul, li {
         border-bottom-right-radius: 40px;
         border-top-left-radius: 40px;
         border: none;
-        background-color: rgb(143, 0, 50);
+        background-color: rgb(155, 0, 54);
+        border: 3px solid rgb(102, 0, 0);
         color: white;
         outline: none;
         cursor: pointer;
         transition: all 0.3s ease 0s;
 
         &:hover {
-            background-color: rgba(143, 0, 50, .8)
+            box-shadow: 5px 5px 0 rgb(102, 0, 0);
         }
     }
 }
@@ -256,8 +265,7 @@ ol, ul, li {
         font-size: 30px;
         font-family: 'Mulish', sans-serif;
         line-height: 1.5;
-        &-link,
-        a {
+        &-link, a {
             text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
         }
         &--link {
@@ -265,9 +273,22 @@ ol, ul, li {
         }
         &-link {
             color: rgba(29, 73, 155, 0.8);
+            
+            &::after {
+                transition: all .35s ease 0s;
+                content: ' →';
+                opacity: 0;
+                margin-left: -10px;
+            }
 
             &:hover {
                 color: rgb(6, 53, 141);
+                &::after {
+                    transition: all .35s ease 0s;
+                    content: ' →';
+                    opacity: 1;
+                    margin-left: 0px;
+                }
             }
         }
     }
@@ -593,7 +614,7 @@ ol, ul, li {
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     user-select: none;
-    margin: 50px 100px 50px 50px;
+    margin: 50px;
 
 		&__items {
             display: flex;
@@ -678,8 +699,6 @@ ol, ul, li {
                 width: 20%;
                 position: absolute;
                 top: -50px;
-                border-top-left-radius: 30px;
-                border-top-right-radius: 30px;
             }
 		}
 }
@@ -721,15 +740,15 @@ ol, ul, li {
     &__media {
         justify-self: center;
         display: grid;
-        grid-template: auto / 1fr 1fr 1fr;
-        column-gap: 100px;
+        grid-template: auto / 1fr 1fr;
+        column-gap: 50px;
         margin-top: 15px;
         width: 75%;
     }
 }
 //! font awesome
 .fab {
-    font-size: 70px;
+    font-size: 80px;
 }
 .fa-telegram-plane {
     color: #2DA5E1;
@@ -738,7 +757,6 @@ ol, ul, li {
 
     &:hover {
         color: rgb(33, 126, 172);
-        // text-shadow: 0 0 20px #2DA5E1;
     }
 }
 
@@ -749,7 +767,6 @@ ol, ul, li {
     
     &:hover {
         color: #b41950;
-        // text-shadow: 0 0 20px #ff085f;
     }
 }
 .fa-vk {
@@ -759,7 +776,6 @@ ol, ul, li {
     
     &:hover {
         color: #1359a8;
-        // text-shadow: 0 0 20px #0077FF;
     }
 }
 .fa-download {
@@ -975,7 +991,10 @@ ol, ul, li {
 }
 
 @media (max-width: 767.98px) {
-
+    *:hover {
+        color: none;
+        background-color: none;
+    }
 }
 
 @media (max-width: 600px) {
