@@ -22,6 +22,27 @@ body.lock {
   overflow: hidden;
 }
 
+.wrapper {
+  -ms-grid-rows: minmax(100px, auto) 1fr minmax(70px, auto);
+  -ms-grid-columns: 1fr;
+      grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/1fr;
+      grid-template-areas: "header" "main" "footer";
+}
+
+.wrapper, .wrapper-1 {
+  min-height: 100%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: -ms-grid;
+  display: grid;
+}
+
+.wrapper-1 {
+  -ms-grid-rows: 1fr minmax(70px, auto);
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr minmax(70px, auto)/1fr;
+      grid-template-areas: "main" "footer";
+}
+
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
@@ -55,27 +76,6 @@ ol, ul, li {
 
 #scroll-top:hover {
   opacity: 1;
-}
-
-.wrapper {
-  -ms-grid-rows: minmax(100px, auto) 1fr minmax(70px, auto);
-  -ms-grid-columns: 1fr;
-      grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/1fr;
-      grid-template-areas: "header" "main" "footer";
-}
-
-.wrapper, .wrapper-1 {
-  min-height: 100%;
-  font-family: 'Montserrat Alternates', sans-serif;
-  display: -ms-grid;
-  display: grid;
-}
-
-.wrapper-1 {
-  -ms-grid-rows: 1fr minmax(70px, auto);
-  -ms-grid-columns: 1fr;
-      grid-template: 1fr minmax(70px, auto)/1fr;
-      grid-template-areas: "main" "footer";
 }
 
 .header {
@@ -118,10 +118,6 @@ ol, ul, li {
 
 .header__title h1 {
   margin: 0;
-}
-
-.header__title h1:first-line {
-  color: rgba(0, 0, 0, 0.7);
 }
 
 .header__title h2 {
@@ -242,7 +238,8 @@ ol, ul, li {
   border-bottom-right-radius: 40px;
   border-top-left-radius: 40px;
   border: none;
-  background-color: #8f0032;
+  background-color: #9b0036;
+  border: 3px solid #660000;
   color: white;
   outline: none;
   cursor: pointer;
@@ -251,7 +248,8 @@ ol, ul, li {
 }
 
 .buttons__change-lang-button:hover {
-  background-color: rgba(143, 0, 50, 0.8);
+  -webkit-box-shadow: 5px 5px 0 #660000;
+          box-shadow: 5px 5px 0 #660000;
 }
 
 .buttons__exit {
@@ -422,6 +420,8 @@ ol, ul, li {
   color: black;
   -webkit-box-shadow: 10px 10px 0 black;
           box-shadow: 10px 10px 0 black;
+  -webkit-transform: translateX(-10px) translateY(-10px);
+          transform: translateX(-10px) translateY(-10px);
 }
 
 .block__download-button:hover img {
@@ -520,15 +520,15 @@ ol, ul, li {
   max-height: 300px;
   border-radius: 0;
   border: 3px solid black;
-  -webkit-box-shadow: 10px 10px 0 black;
-          box-shadow: 10px 10px 0 black;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 .texts__item:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 10px 10px 0 black;
+          box-shadow: 10px 10px 0 black;
+  -webkit-transform: translateX(-10px) translateY(-10px);
+          transform: translateX(-10px) translateY(-10px);
 }
 
 .texts__item:hover img {
@@ -725,7 +725,7 @@ ol, ul, li {
 .tabs {
   background-color: rgba(0, 0, 0, 0.1);
   border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -769,11 +769,6 @@ ol, ul, li {
 
 .tabs__item:hover {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.tabs__item-5 {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 30px;
 }
 
 .tabs__block {
@@ -836,6 +831,8 @@ ol, ul, li {
 
 .tabs__block:before {
   content: '';
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   height: 50px;
   width: 20%;
   position: absolute;
@@ -920,26 +917,15 @@ ol, ul, li {
   color: #217eac;
 }
 
-.fa-instagram {
-  color: #ff085f;
-  text-shadow: none;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.fa-instagram:hover {
-  color: #b41950;
-}
-
 .fa-vk {
-  color: #0077FF;
+  color: #427dc0;
   text-shadow: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 .fa-vk:hover {
-  color: #1359a8;
+  color: #0f4481;
 }
 
 .fa-download {
@@ -1006,23 +992,14 @@ ol, ul, li {
         grid-template: 1fr / 1fr;
   }
   .block__img {
-    width: 25%;
+    width: 50%;
   }
   .popup__img img {
     max-height: 700px;
     max-width: 600px;
   }
-  .fa-telegram-plane:hover {
-    color: #2DA5E1;
-    text-shadow: none;
-  }
-  .fa-instagram:hover {
-    color: #ff085f;
-    text-shadow: none;
-  }
-  .fa-vk:hover {
-    text-shadow: none;
-    color: #0077FF;
+  .fa-telegram-plane:hover, .fa-vk:hover {
+    color: none;
   }
   .menu__body {
     position: fixed;
