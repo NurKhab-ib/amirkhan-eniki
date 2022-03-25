@@ -234,9 +234,9 @@ const langArr = {
         "en": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Сreativity</strong><br>&nbsp;&nbsp;&nbsp;",
     },
     "biotext-achieve" : {
-        "ru": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Достижения</strong><br>&nbsp;&nbsp;&nbsp;",
-        "tat": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Казанышлары</strong><br>&nbsp;&nbsp;&nbsp;",
-        "en": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Achievements</strong><br>&nbsp;&nbsp;&nbsp;",
+        "ru": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Достижения</strong><br>&nbsp;&nbsp;&nbsp;Среди достижений Амирхана Еники можно выделить следующие:<br><ul><li>Орден Трудового Красного знамени - 1957</li><li>Знак Почёта - 1957</li><li>Государственная премия ТАССР имени Г. Тукая - 1984</li><li>Звание народного писателя ТАССР - 1989</li><li>Государственная премия имени Г. Исхаки - 1993</li></ul>",
+        "tat": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Казанышлары</strong><br>&nbsp;&nbsp;&nbsp;Әмирхан Еники казанышлары арасында буларны аерып була:<br><ul><li>Хезмәт Кызыл Байрагы ордены - 1957</li><li>Мактау Билгесе - 1957</li><li>Г. Тукай исемендәге ТАССР Дәүләт премиясы - 1984</li><li>ТАССР халык язучысы исеме - 1989</li><li>Г. Исхаки исемендәге Дәүләт премиясы - 1993</li></ul>",
+        "en": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Achievements</strong><br>&nbsp;&nbsp;&nbsp;Among the achievements of Amirkhan Yeniki are the following:<ul><li>Order of the Red Banner of Labor - 1957</li><li>Badge of Honor - 1957</li><li>The State Prize of the TASSR named after G. Tukai - 1984</li><li>Title of People's writer of the TASSR - 1989</li><li>State Prize named after G. Iskhaki - 1993</li></ul>",
     },
     "biolink-1" : {
         "ru": "Читать биографию писателя",

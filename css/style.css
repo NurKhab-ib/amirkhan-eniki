@@ -303,6 +303,10 @@ ol, ul, li {
   line-height: 1.5;
 }
 
+.block__text-l li, .block__text-r li, .block__text-l-g li, .block__text-r-g li {
+  list-style: outside;
+}
+
 .block__text-l-link, .block__text-l a, .block__text-r-link, .block__text-r a, .block__text-l-g-link, .block__text-l-g a, .block__text-r-g-link, .block__text-r-g a {
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
@@ -961,10 +965,10 @@ ol, ul, li {
   .header__title, .header__logo {
     text-align: center;
   }
-  .header__title h1 {
-    font-size: 60px;
+  .header h1 {
+    font-size: 50px;
   }
-  .header__title h2 {
+  .header h2 {
     font-size: 35px;
   }
   .header__line {
@@ -977,14 +981,17 @@ ol, ul, li {
     height: 100px;
   }
   .block__title {
-    font-size: 40px;
+    font-size: 35px;
   }
   .block__line {
-    width: 60%;
+    width: 90%;
   }
   .block__text-l-g, .block__text-r-g, .block__text-l, .block__text-r {
-    font-size: 25px;
+    font-size: 30px;
     margin: 10px 20px;
+  }
+  .block__text-l-g a, .block__text-r-g a, .block__text-l a, .block__text-r a {
+    font-size: 30px;
   }
   .block__parag-l-container, .block__parag-r-container {
     -ms-grid-rows: 1fr;
@@ -1035,7 +1042,10 @@ ol, ul, li {
     color: #fff;
   }
   .menu__link:hover {
-    font-size: 35px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .menu__change-lang {
     padding: 5px 20px;
@@ -1091,6 +1101,9 @@ ol, ul, li {
     top: 50%;
     -webkit-transform: scale(1) translate(0px, -50%);
             transform: scale(1) translate(0px, -50%);
+  }
+  .social__text {
+    font-size: 17px;
   }
 }
 
