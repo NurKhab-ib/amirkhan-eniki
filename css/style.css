@@ -64,7 +64,7 @@ ol, ul, li {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 100;
+  z-index: 10;
   text-align: center;
   font-size: 70px;
   opacity: 0.8;
@@ -983,7 +983,7 @@ ol, ul, li {
     height: 100px;
   }
   .block__title {
-    font-size: 35px;
+    font-size: 30px;
   }
   .block__title-t {
     font-size: 25px;
@@ -992,11 +992,21 @@ ol, ul, li {
     width: 90%;
   }
   .block__text-l-g, .block__text-r-g, .block__text-l, .block__text-r {
-    font-size: 30px;
+    font-size: 25px;
     margin: 10px 20px;
   }
   .block__text-l-g a, .block__text-r-g a, .block__text-l a, .block__text-r a {
     font-size: 30px;
+  }
+  .block__text-l-g-link:active, .block__text-r-g-link:active, .block__text-l-link:active, .block__text-r-link:active {
+    color: #06358d;
+  }
+  .block__text-l-g-link:active::after, .block__text-r-g-link:active::after, .block__text-l-link:active::after, .block__text-r-link:active::after {
+    -webkit-transition: all .35s ease 0s;
+    transition: all .35s ease 0s;
+    content: ' →';
+    opacity: 1;
+    margin-left: 0px;
   }
   .block__parag-l-container, .block__parag-r-container {
     -ms-grid-rows: 1fr;
@@ -1054,7 +1064,6 @@ ol, ul, li {
   }
   .menu__change-lang {
     padding: 5px 20px;
-    font-size: 30px;
   }
   .menu__burger {
     z-index: 101;
@@ -1118,7 +1127,7 @@ ol, ul, li {
     bottom: 10px;
   }
   .buttons__exit {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
