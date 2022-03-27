@@ -172,6 +172,11 @@ ol, ul, li {
           box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.3);
 }
 
+.menu__link:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .menu_burger {
   display: none;
 }
@@ -213,25 +218,24 @@ ol, ul, li {
           align-items: center;
   justify-items: center;
   position: fixed;
-  right: 10px;
   top: 10px;
-  padding: 5px 10px;
+  right: 10px;
+  padding: 5px;
   border-radius: 30px;
-  z-index: 100;
+  z-index: 10;
   border: 3px solid rgba(0, 0, 0, 0.6);
   background-color: rgba(255, 255, 255, 0.65);
 }
 
 .buttons__change-lang {
-  height: 70%;
+  text-align: center;
 }
 
 .buttons__change-lang-button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 20px;
-  height: 100%;
+  padding: 0 10px;
   text-align: center;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 20px;
@@ -253,9 +257,7 @@ ol, ul, li {
 }
 
 .buttons__exit {
-  top: 30px;
-  right: 30px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .main {
@@ -348,18 +350,18 @@ ol, ul, li {
 }
 
 .block__text-r, .block__text-r-g {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
   margin-left: auto;
   -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .block__text-l-g {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 .block__text-r-g {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .block__parag-l-container, .block__parag-r-container {
@@ -983,6 +985,9 @@ ol, ul, li {
   .block__title {
     font-size: 35px;
   }
+  .block__title-t {
+    font-size: 25px;
+  }
   .block__line {
     width: 90%;
   }
@@ -1105,6 +1110,16 @@ ol, ul, li {
   .social__text {
     font-size: 17px;
   }
+  .tabs__item {
+    font-size: 30px;
+  }
+  .buttons {
+    top: auto;
+    bottom: 10px;
+  }
+  .buttons__exit {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1134,5 +1149,6 @@ ol, ul, li {
     overflow: hidden;
     font-size: 14px;
     text-overflow: ellipsis;
+    font-size: 25px;
   }
 }
