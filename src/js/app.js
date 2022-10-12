@@ -243,9 +243,9 @@ const langArr = {
         "en": "&#9658;&nbsp;&nbsp;&nbsp;<strong>Achievements</strong><br>&nbsp;&nbsp;&nbsp;",
     },
     "biolink-1" : {
-        "ru": "Читать биографию писателя",
-        "tat": "Язучының биографиясен укырга &rarr;",
-        "en": "To read the writer's biography &rarr;",
+        "ru": "<i class='fa-solid fa-link' style='color: black; font-size: 25px;'></i> Читать биографию писателя",
+        "tat": "<i class='fa-solid fa-link' style='color: black; font-size: 25px;'></i> Язучының биографиясен укырга",
+        "en": "<i class='fa-solid fa-link' style='color: black; font-size: 25px;'></i> To read the writer's biography",
     },
     "textstitle" : {
         "ru": "<i class='fas fa-book'></i>&nbsp;Художественные произведения",
@@ -263,14 +263,14 @@ const langArr = {
         "en": "",
     },
     "textslink-1" : {
-        "ru": "Читать произведения А. Еники",
-        "tat": "Ә. Еники әсәрләрен укырга &rarr;",
-        "en": "To read A. Eniki's works &rarr;",
+        "ru": "<i class='fa-solid fa-link' style='color: black; font-size: 25px;'></i> Читать произведения А. Еники",
+        "tat": "<i class='fa-solid fa-link' style='color: black; font-size: 25px;'></i> Ә. Еники әсәрләрен укырга",
+        "en": "<i class='fa-solid fa-link' style='color: black; font-size: 25px;'></i> To read A. Eniki's works",
     },
     "textsfile" : {
-        "ru": "Или почитать его рассказы вы сможете, скачав данный файл:",
-        "tat": "Яки аның хикәяләрен әлеге файлда укып була:",
-        "en": "Or you can read these stories in this file:",
+        "ru": "Или почитать его рассказы вы сможете, скачав <a href='files/files.zip' style='color: blue' download>данный</a> файл:",
+        "tat": "Яки аның хикәяләрен <a href='files/files.zip' style='color: blue' download>әлеге</a> файлда укып була.",
+        "en": "Or you can read these stories in <a href='files/files.zip' style='color: blue' download>this</a> file.",
     },
     "journtitle" : {
         "ru": "<i class='far fa-newspaper'></i>&nbsp;Публицистика",
@@ -278,9 +278,9 @@ const langArr = {
         "en": "<i class='far fa-newspaper'></i>&nbsp;Publicism",
     },
     "journtext" : {
-        "ru": "Вы можете скачать сборник публицистических рассказов А. Еники:",
-        "tat": "Ә. Еникиның публицистик хикәяләре җыентыгын күчереп алырга мөмкин:",
-        "en": "You can download the collection of publicistic writings by A. Eniki:",
+        "ru": "Вы можете скачать <a href='files/files.zip' style='color: blue' download>сборник</a> публицистических рассказов А. Еники.",
+        "tat": "Ә. Еникиның публицистик хикәяләре <a href='files/files.zip' style='color: blue' download>җыентыгын</a> күчереп алырга мөмкин.",
+        "en": "You can download the <a href='files/files.zip' style='color: blue' download>collection</a> of publicistic writings by A. Eniki.",
     },
     "xsubtext" : {
         "ru": "&#128712;&nbsp;Это безопасно.",
